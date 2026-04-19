@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harshit Chauhan - Machine Learning Portfolio focused on Education and Agriculture.">
+    <title>Harshit Chauhan | Machine Learning Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Advanced ML / Calculus Animation Background -->
+    <canvas id="ml-math-canvas"></canvas>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Harshit Chauhan<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#toolbox">Toolbox</a>
+                <a href="#contact" class="btn-primary-outline">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-layout">
+                <div class="hero-content fade-in">
+                    <p class="role-badge"><i class="fa-solid fa-code-branch"></i> ML / Predictive Analytics</p>
+                    <h1 class="hero-title">Predicting Impact: <br><span class="gradient-text">Machine Learning <br>for Education & Agriculture.</span></h1>
+                    <p class="hero-subtitle">The "Insight-First" Engineer. BTech CSE Student specializing in predictive models. Leveraging data algorithms to forecast student success and secure food production.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">View Featured Projects <i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="social-links">
+                            <a href="https://github.com/harshitchauhann95" target="_blank" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com/in/harshitchauhann" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="mailto:harshitchauhan05spn@gmail.com" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://instagram.com/harshitchauhann" target="_blank" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/916388077634" target="_blank" aria-label="WhatsApp" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-col fade-in delay-1">
+                    <div class="profile-wrapper">
+                        <div class="tech-rings"></div>
+                        <div class="orbiting-nodes">
+                            <div class="orbit-node node-1"><i class="fa-brands fa-python"></i></div>
+                            <div class="orbit-node node-2"><i class="fa-solid fa-brain"></i></div>
+                            <div class="orbit-node node-3"><i class="fa-solid fa-chart-line"></i></div>
+                        </div>
+                        <img src="assets/profile.jpg" alt="Harshit Chauhan Profile" class="profile-pic">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Cornerstone Projects</h2>
+                    <p>Turning complex data logic into actionable insights to solve real-world problems.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: AgriPredict -->
+                    <article class="project-card glass-card fade-in slide-up hidden">
+                        <div class="project-image-wrapper">
+                            <img src="assets/agripredict-real.png" alt="AgriPredict Dashboard" class="project-image">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badge agriculture">The Social Impact Lead</div>
+                            <h3 class="project-title">AgriPredict</h3>
+                            <p class="project-concept">A Machine Learning-based forecasting system designed to support food security.</p>
+                            
+                            <div class="project-details">
+                                <div class="detail-group">
+                                    <h4><i class="fa-solid fa-triangle-exclamation"></i> The Problem</h4>
+                                    <p>Uncertainty in crop yields due to unpredictable climate and complex soil variables.</p>
+                                </div>
+                                <div class="detail-group">
+                                    <h4><i class="fa-solid fa-gears"></i> Technical Solution</h4>
+                                    <p>Processed massive environmental datasets utilizing advanced ensemble methods to achieve high-accuracy yield forecasts, empowering farmers to make data-driven planting decisions.</p>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Math</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: EduAnalytics -->
+                    <article class="project-card glass-card fade-in slide-up hidden delay-1">
+                        <div class="project-image-wrapper">
+                            <img src="assets/eduanalytics-real.png" alt="EduAnalytics Chatbot Mockup" class="project-image">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badge education">The Accessibility Lead</div>
+                            <h3 class="project-title">EduAnalytics-Chatbot</h3>
+                            <p class="project-concept">An interactive ML tool predicting academic performance through a conversational interface.</p>
+                            
+                            <div class="project-details">
+                                <div class="detail-group">
+                                    <h4><i class="fa-solid fa-triangle-exclamation"></i> The Problem</h4>
+                                    <p>Identifying students at risk of underperforming before it's too late to organically intervene.</p>
+                                </div>
+                                <div class="detail-group">
+                                    <h4><i class="fa-solid fa-lightbulb"></i> Deployment Highlight</h4>
+                                    <p>Focused on making complex ML probability models accessible to non-technical users via a highly intuitive chatbot interface built dynamically with Streamlit.</p>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack">
+                                <span>Streamlit</span>
+                                <span>Artificial Intelligence</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Toolbox -->
+        <section class="toolbox" id="toolbox">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Technical Toolbox</h2>
+                    <p>The core computational stack backing my statistical models.</p>
+                </div>
+                
+                <div class="toolbox-grid glass-grid fade-in hidden">
+                    <div class="tool-category glass-card">
+                        <div class="category-icon"><i class="fa-solid fa-square-root-variable"></i></div>
+                        <h3>Algorithm Core</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-info"><span>Python</span></div>
+                                
+                            </li>
+                            <li>
+                                <div class="skill-info"><span>Java</span></div>
+                                
+                            </li>
+                            <li>
+                                <div class="skill-info"><span>C++</span></div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tool-category glass-card main-focus">
+                        <div class="category-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3>ML & Data</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-info"><span>Scikit-learn</span></div>
+                                
+                            </li>
+                            <li>
+                                <div class="skill-info"><span>Random Forest </span></div>
+                                
+                            </li>
+                            <li>
+                                <div class="skill-info"><span>Pandas & Numpy</span></div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tool-category glass-card">
+                        <div class="category-icon"><i class="fa-solid fa-server"></i></div>
+                        <h3>Deployment</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-info"><span>Streamlit</span></div>
+                                
+                            </li>
+                            <li>
+                                <div class="skill-info"><span>Git / GitHub</span></div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>Harshit Chauhan</h2>
+                <p>As a Computer Science Engineer, I specialize in bridging the gap between complex algorithms and practical utility. My work focuses on translating statistical data into real world impact through predictive modeling and automation. I am committed to building robust, data driven applications like AgriPredict and EduAnalytics that solve tangible problems in the sectors that matter most.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Let's Connect</h3>
+                <div class="contact-links">
+                    <a href="https://github.com/harshitchauhann95" target="_blank" class="contact-link">
+                        <i class="fa-brands fa-github"></i> github.com/harshitchauhann95
+                    </a>
+                    <a href="https://linkedin.com/in/harshitchauhann" target="_blank" class="contact-link">
+                        <i class="fa-brands fa-linkedin"></i> linkedin.com/in/harshitchauhann
+                    </a>
+                    <a href="mailto:harshitchauhan05spn@gmail.com" class="contact-link">
+                        <i class="fa-solid fa-envelope"></i> harshitchauhan05spn@gmail.com
+                    </a>
+                    <a href="https://instagram.com/harshitchauhann" target="_blank" class="contact-link">
+                        <i class="fa-brands fa-instagram"></i> @harshitchauhann
+                    </a>
+                    <a href="https://wa.me/916388077634" target="_blank" class="contact-link">
+                        <i class="fa-brands fa-whatsapp"></i> +91 6388077634
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Harshit Chauhan. ज्ञानं भारः क्रियां विना</p>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
