@@ -408,7 +408,7 @@ ul { list-style: none; }
    Toolbox Section
    ========================================================================== */
 .toolbox { padding: var(--section-padding); position: relative; z-index: 10; }
-.toolbox-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+.toolbox-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
 
 .tool-category {
     padding: 3rem 2rem; border-radius: 20px; text-align: center;
