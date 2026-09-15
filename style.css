@@ -438,12 +438,13 @@ ul { list-style: none; }
 .training { padding: var(--section-padding); position: relative; z-index: 10; }
 .training-card {
     padding: 3rem; border-radius: 24px; transition: var(--transition-slow);
-    display: flex; flex-direction: column; gap: 1.5rem;
+    display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3rem; align-items: center;
 }
 .training-card:hover {
     box-shadow: var(--shadow-hover); transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.85);
 }
+.training-info { display: flex; flex-direction: column; gap: 1.25rem; }
 .training-header {
     display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
 }
@@ -460,6 +461,17 @@ ul { list-style: none; }
 .training-highlights { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 0.5rem; }
 .training-highlights li { display: flex; align-items: flex-start; gap: 0.8rem; color: var(--clr-text-muted); font-size: 1rem; line-height: 1.6; }
 .training-highlights li i { color: var(--clr-forest); font-size: 1.1rem; margin-top: 0.2rem; }
+
+.training-cert-container {
+    position: relative; width: 100%; height: 260px; border-radius: 16px; overflow: hidden;
+    background: rgba(0, 21, 51, 0.04); border: 1.5px dashed rgba(0, 21, 51, 0.15);
+    display: flex; align-items: center; justify-content: center;
+}
+.training-cert-image {
+    width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; position: relative; z-index: 2;
+}
+.training-card:hover .training-cert-image { transform: scale(1.04); }
+.training-cert-image.cert-missing { display: none !important; }
 
 /* ==========================================================================
    Certificates Section
@@ -556,6 +568,9 @@ footer { background: var(--clr-navy); color: white; padding: 5rem 0 2rem; positi
     .project-card, .project-card:nth-child(even) { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
     .project-card .project-image-wrapper, .project-card:nth-child(even) .project-image-wrapper { order: 1; }
     .project-card .project-content, .project-card:nth-child(even) .project-content { order: 2; }
+    
+    .training-card { grid-template-columns: 1fr; gap: 2rem; padding: 2rem; }
+    
     .footer-content { flex-direction: column; gap: 3rem; align-items: center; text-align: center; }
 }
 
